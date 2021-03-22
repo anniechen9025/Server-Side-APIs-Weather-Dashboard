@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="col-12 p-3 text-white bg-dark">
+            <h1>Weather Dashboard</h1>
+        </div>
+        <div class = "row min-100-vh">
+            <div class="col-3">
+                <h2 class="">Search for a City</h2>
+            </div>
+
+            <div class="col-9"></div>
+        </div>
+        <div class = "row min-100-vh">
+            <div class = "col-3">
+                <form id="search-form" class="mb-2">
+                    <input id="search-input" class="form-input w-80" type="text"><button id="btn-block">Search</button>
+                    <div id = "history"></div>
+                </form>
+            </div>
+            <div class = "col-9">
+                <section class="border col-12">
+                    <h3 id = "location"></h3><div id = "current_icon"></div>
+                    <p id = "date"></p>
+                    <p id = "temperture"></p>
+                    <p id = "humidity"></p>
+                    <p id = "windspeed"></p>
+                    <p id = "uvindex"></p>
+                </section>
+                <h4>5-Day Forecast:</h4>
+                <div class = "card-deck">
+                    <div class = "card text-white bg-info border border-info">
+                        <p id = "date-1"></p>
+                        <div id = "icon-1"></div>
+                        <p id = "temperture-1"></p>
+                        <p id = "humidity-1"></p>
+                    </div>
+                    <div class = "card text-white bg-info border border-info">
+                        <p id = "date-2"></p>
+                        <div id = "icon-2"></div>
+                        <p id = "temperture-2"></p>
+                        <p id = "humidity-2"></p>
+                    </div>
+                    <div class = "card text-white bg-info border border-info">
+                        <p id = "date-3"></p>
+                        <div id = "icon-3"></div>
+                        <p id = "temperture-3"></p>
+                        <p id = "humidity-3"></p>
+                    </div>
+                    <div class = "card text-white bg-info border border-info">
+                        <p id = "date-4"></p>
+                        <div id = "icon-4"></div>
+                        <p id = "temperture-4"></p>
+                        <p id = "humidity-4"></p>
+                    </div>
+                    <div class = "card text-white bg-info border border-info">
+                        <p id = "date-5"></p>
+                        <div id = "icon-5"></div>
+                        <p id = "temperture-5"></p>
+                        <p id = "humidity-5"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/script.js"></script>
+</body>
+
+</html>
